@@ -15,7 +15,7 @@ export default function ThemeToggleBtn () {
     return(
         <button 
             onClick={toggleTheme}
-            className="text-4xl text-black"
+            className="text-4xl text-black dark:text-white"
         >
             {theme === 'light' ? <FaRegLightbulb /> : <FaLightbulb />}
         </button>
