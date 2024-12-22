@@ -7,10 +7,12 @@ First, I started with build the app and adding the necessary dependencies.
 
 I added all of the requirements for the authentication and I used Github for that still not stylish yet.
 
-### 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Adding Dark and Light Button
 
-## Learn More
+there was a small bug where i wrote the layout component in the (root) as layour which wasn't working but we're good now.
+I added the logic of the toggle button still not stylish yet.
+
+###
 
 To learn more about Next.js, take a look at the following resources:
 
