@@ -12,9 +12,11 @@ I added all of the requirements for the authentication and I used Github for tha
 there was a small bug where i wrote the layout component in the (root) as layour which wasn't working but we're good now.
 I added the logic of the toggle button still not stylish yet.
 
-###
+### Finish with the NavBar
 
-To learn more about Next.js, take a look at the following resources:
+Finished with the logic and the style in the NavBar component and made it first check if the user signin or not and based on that the buttons will chage.
+
+###
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
