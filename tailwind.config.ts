@@ -13,8 +13,13 @@ export default {
         black: "#000",
         white: "#FFF",
       },
+      fontFamily: {
+        jost: 'var(--font-jost)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animated")
+  ],
   darkMode: 'class',
 } satisfies Config;

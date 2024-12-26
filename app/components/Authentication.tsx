@@ -17,7 +17,7 @@ export default async function Authentication (){
     // }
 
     return(
-        <div className="font-medium text-[18px] text-black dark:text-white">
+        <div className="font-medium text-[18px] text-black dark:text-white font-jost">
             {session && session?.user ?
                 <div className="flex items-center [&>*]:pl-2 duration-300">
                     <Link href='/startup/create'>
