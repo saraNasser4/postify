@@ -1,6 +1,8 @@
-
+import SubHeading from '../components/SubHeading'
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <SubHeading />
+    </div>
   );
 }
