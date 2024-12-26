@@ -16,12 +16,9 @@ I added the logic of the toggle button still not stylish yet.
 
 Finished with the logic and the style in the NavBar component and made it first check if the user signin or not and based on that the buttons will chage.
 
-###
+### Adjusting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I added the logo and remove the unnecessary so I can focus only for the next step which building the Hero page.
 
 ## Deploy on Vercel
 
