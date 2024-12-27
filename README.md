@@ -23,3 +23,8 @@ I added the logo and remove the unnecessary so I can focus only for the next ste
 ### Finish with SubHeading component
 
 I finished with the SubHeading comonent and the resone why I put it in individual component cuz we'll need it in difference pages so to save time and not copy and past.
+
+### Add a component for the form in the SubHeading
+
+because the btn in the form needed to be on client server I had to made an individual component.
+Added a query to let me know what the user types in the form.

@@ -1,6 +1,8 @@
-import { FaSearch } from "react-icons/fa";
+import FormComp from '../components/FormComp';
 
-export default function SubHeading (){
+
+export default async function SubHeading ({ searchParams }: { searchParams: Promise<{ query?: string }>}){
+    const query = (await searchParams)?.query
     return (
         <div className="!pattern w-full bg-primary p-4 min-h-[400px] flex justify-center items-center flex-col gap-4">
             <div className="bg-secondary dark:bg-white p-1 text-white dark:text-secondary font-semibold text-xl rounded capitalize">Patch, Vote and Grow</div>
@@ -9,11 +11,7 @@ export default function SubHeading (){
                 connect with entrepreneurs
             </div>
             <p className="text-white dark:text-black font-medium">Submit now your work</p>
-            {/* <form className="relative max-w-[480px] mx-auto">
-                <input type='text' placeholder='SEARCH STARTUP' className="w-full min-w-[300px] py-2 px-4 rounded-full border-2 border-black shadow-xl outline-none placeholder:text-black placeholder:font-bold accent-primary"/>
-                <button className="absolute top-[14px] right-3"><FaSearch /></button>
-            </form> */}
-            
+            <FormComp query={query}/>    
         </div>
     )
 }
