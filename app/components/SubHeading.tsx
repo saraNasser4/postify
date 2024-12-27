@@ -1,8 +1,8 @@
 import FormComp from '../components/FormComp';
 
 
-export default async function SubHeading ({ searchParams }: { searchParams: Promise<{ query?: string }>}){
-    const query = (await searchParams)?.query
+export default function SubHeading ({ query }: { query?: string }){    
+    
     return (
         <div className="!pattern w-full bg-primary p-4 min-h-[400px] flex justify-center items-center flex-col gap-4">
             <div className="bg-secondary dark:bg-white p-1 text-white dark:text-secondary font-semibold text-xl rounded capitalize">Patch, Vote and Grow</div>

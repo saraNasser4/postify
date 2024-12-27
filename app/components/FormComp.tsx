@@ -3,10 +3,12 @@ import { FaSearch } from "react-icons/fa"
 import SearchFormReset from "../components/SearchFormReset"
 
 export default function FormComp({ query }: { query?: string }) {
+    
     return(
         <Form
             action='/'
             className="search-form relative "
+            scroll={false}
         >
             <input 
                 type='text'
