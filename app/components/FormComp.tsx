@@ -18,7 +18,7 @@ export default function FormComp({ query }: { query?: string }) {
                 className="w-full min-w-[300px] py-2 px-4 rounded-full border-2 border-black shadow-xl text-xl font-black outline-none placeholder:text-black placeholder:font-bold accent-primary"
             />
             {query && <SearchFormReset />}
-            <button type='submit' className="absolute top-[14px] right-3"><FaSearch /></button>
+            <button type='submit' className="absolute top-3 right-3"><FaSearch size={25} /></button>
             
         </Form>
     )

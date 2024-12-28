@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import { IoMdClose } from "react-icons/io"
 
 export default function SearchFormReset() {
     const reset = ()=> {
@@ -13,9 +14,9 @@ export default function SearchFormReset() {
             <button 
                 type='reset'
                 onClick={reset} 
-                className="absolute top-[6px] right-10 font-bold text-xl hover:text-primary"
+                className="absolute top-2 right-12 font-bold text-xl hover:text-primary"
             >
-                X
+                <IoMdClose size={30} />
             </button>
         </Link>
     )

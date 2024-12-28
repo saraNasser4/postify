@@ -17,7 +17,7 @@ export default async function Authentication (){
                         await signOut()
                     }
                     }>
-                        <button type="submit" className="border border-primary hover:text-primary rounded-xl px-4 py-2 ">Log out</button>
+                        <button type="submit" className="border border-primary hover:text-primary rounded-xl px-4 py-2">Log out</button>
                     </form>
                     <span className="hidden md:block text-[16px] lg:text-xl text-primary">{session?.user?.name}</span>
                 </div>

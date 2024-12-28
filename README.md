@@ -28,3 +28,8 @@ I finished with the SubHeading comonent and the resone why I put it in individua
 
 because the btn in the form needed to be on client server I had to made an individual component.
 Added a query to let me know what the user types in the form.
+
+### Add a ui card component
+
+Added a component takes a data as params and then return a card to display on the screen I'd added a fake data just to test.
+To add an external photo I needed to tell next.config first so it be aware of the type of the url. 
