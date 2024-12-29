@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,11 +13,17 @@
     "react-dom": "$react-dom"
   },
   "dependencies": {
+    "@sanity/icons": "^3.5.6",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.68.3",
     "next": "15.1.2",
     "next-auth": "^5.0.0-beta.25",
+    "next-sanity": "^9.8.30",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "sanity": "^3.68.3",
+    "styled-components": "^6.1.13",
     "tailwindcss-animated": "^1.1.2"
   },
   "devDependencies": {

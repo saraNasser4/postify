@@ -33,3 +33,7 @@ Added a query to let me know what the user types in the form.
 
 Added a component takes a data as params and then return a card to display on the screen I'd added a fake data just to test.
 To add an external photo I needed to tell next.config first so it be aware of the type of the url. 
+
+### Added Sanity
+
+In order to manage my content and store'em in a datastore, I had to add Sanity to do it for me.
