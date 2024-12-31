@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Provider from "./components/Provider";
+import "easymde/dist/easymde.min.css"
 
 const jost = Jost({
   variable: "--font-jost",

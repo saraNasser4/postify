@@ -37,3 +37,9 @@ To add an external photo I needed to tell next.config first so it be aware of th
 ### Added Sanity
 
 In order to manage my content and store'em in a datastore, I had to add Sanity to do it for me.
+The main problem that I faced here was I didn't have 'react.is' and it requireds in order to know whether or not if the components of react type.
+
+### Finish the Sanity logic
+
+I'd created my own schema which are author and startup still everything have to be doing throughout Sanity webpage. However everything works fine.
+I had to provide which type of data I want and its name.
