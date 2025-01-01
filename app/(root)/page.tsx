@@ -1,14 +1,20 @@
 import SubHeading from '../components/SubHeading'
 import StartupCard from '../components/StartupCard';
 import { post } from '../context/types'
-import { client } from '@/sanity/lib/client';
 import { STARTUPS_QUERY } from '@/sanity/lib/queries';
+import { sanityFetch, SanityLive } from '@/sanity/lib/live';
 
 
 export default async function Home ({ searchParams }: { searchParams: Promise<{ query?: string }>}){
   const query = (await searchParams)?.query
 
-  const posts: post[] = await client.fetch(STARTUPS_QUERY);
+  let posts: post[] = []
+  try {
+    const { data } = await sanityFetch({ query: STARTUPS_QUERY, params: {} })
+    posts =data
+  } catch (err) {
+    console.error('Error fetching posts:', err)
+  }
 
   return (
     <main className='dark:bg-black'>
@@ -21,7 +27,7 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
         </h2>
         <ul className='grid sm:grid-cols-2 md:grid-cols-3 gap-5 py-7'>
           {posts?.length > 0 ? (
-            posts.map((post)=>(
+            posts.map((post: post)=>(
               <StartupCard key={post?._id} post={post} /> 
             ))
           ) : (
@@ -29,6 +35,8 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
           )}
         </ul>
       </section>
+
+      <SanityLive />
     </main>
   );
 }
