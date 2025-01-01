@@ -43,3 +43,8 @@ The main problem that I faced here was I didn't have 'react.is' and it requireds
 
 I'd created my own schema which are author and startup still everything have to be doing throughout Sanity webpage. However everything works fine.
 I had to provide which type of data I want and its name.
+
+### Fetch data from Sanity
+
+Made the project gets its data form the Sanity itself instead of writing the posts manually.
+I changed the types.ts file to be suitable for the new data.

@@ -10,20 +10,6 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
 
   const posts: post[] = await client.fetch(STARTUPS_QUERY);
 
-  console.log(JSON.stringify(posts))
-  // const posts: post[] = [
-  //   {
-  //     _createdAt: '14/5/2023',
-  //     views: 55,
-  //     author: { name: 'Sara', _id: 1 },
-  //     _id: 1,
-  //     description: 'This is a description',
-  //     image: 'https://placehold.co/600x400',
-  //     category: 'Robots',
-  //     title: 'We Robots',
-  //   },
-  // ]
-
   return (
     <main className='dark:bg-black'>
       <section>

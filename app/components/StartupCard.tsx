@@ -4,13 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function StartupCard({ post }: { post: post}) {
-    const dateArr = post._createdAt.split('/').map((el)=> +el)
-    const postDate = new Date(dateArr[2], dateArr[1], dateArr[0]).toDateString()
+    const postDate = new Date(post._createdAt).toDateString()
     
     return(
         <li className="flex items-center justify-evenly gap-4 flex-col p-3 mx-auto w-full max-w-[410px]  border-4 border-black rounded-xl dark:bg-secondary dark:text-white hover:bg-primary/20 hover:border-primary dark:hover:bg-secondary/70">
             <div className="flex justify-between w-full">
-                <p className="bg-primary/80 dark:bg-primary/50 px-1 rounded-full">{postDate ? postDate : post._createdAt}</p>
+                <p className="bg-primary/80 dark:bg-primary/50 px-1 rounded-full">{postDate}</p>
                 <div className="flex items-center gap-2">
                     <FaRegEye className="text-primary" />
                     <span>{post.views}</span>
@@ -33,7 +32,7 @@ export default function StartupCard({ post }: { post: post}) {
 
             <Link href={`/startup/${post._id}`} className="w-full">
                 <p className="my-2 text-[14px]">{post.description}</p>
-                <img src={post.image} alt="post image" className="rounded-xl max-h-[200px] min-w-full"/>
+                <img src={post.image} alt="post image" className="rounded-xl max-h-[200px] min-w-full" />
             </Link>
 
             <div className="flex justify-between w-full text-[18px]">
