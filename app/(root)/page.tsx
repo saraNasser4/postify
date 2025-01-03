@@ -9,9 +9,10 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
   const query = (await searchParams)?.query
 
   let posts: post[] = []
+  const params = { search: query || null}
   try {
-    const { data } = await sanityFetch({ query: STARTUPS_QUERY, params: {} })
-    posts =data
+    const { data }  = await sanityFetch({ query: STARTUPS_QUERY, params })
+    posts = data
   } catch (err) {
     console.error('Error fetching posts:', err)
   }
@@ -31,11 +32,10 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
               <StartupCard key={post?._id} post={post} /> 
             ))
           ) : (
-            <p>No startups found</p>
+            <p className='dark:text-white'>No startups found</p>
           )}
         </ul>
       </section>
-
       <SanityLive />
     </main>
   );

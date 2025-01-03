@@ -48,3 +48,5 @@ I had to provide which type of data I want and its name.
 
 Made the project gets its data form the Sanity itself instead of writing the posts manually.
 I changed the types.ts file to be suitable for the new data.
+
+### Make the search dynamic
