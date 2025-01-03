@@ -50,3 +50,7 @@ Made the project gets its data form the Sanity itself instead of writing the pos
 I changed the types.ts file to be suitable for the new data.
 
 ### Make the search dynamic
+
+### ensure startup route works depends on the data
+
+I made sure that when the user click on the details button in the card it shows up the right page with the right data.

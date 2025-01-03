@@ -39,7 +39,7 @@ export default function StartupCard({ post }: { post: post}) {
                 <Link href={`/?query=${post.category.toLowerCase()}`}>
                     <p className="border border-primary hover:text-primary rounded-xl px-3 py-1.5">{post.category}</p>
                 </Link>
-                <Link href={`/startups/${post._id}`}>
+                <Link href={`/startup/${post._id}`}>
                     <button className="bg-primary hover:bg-primary/90 px-3 py-1.5 rounded-xl">Details</button>
                 </Link>
             </div>
