@@ -10,9 +10,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // experimental: {
-  //   ppr: 'incremental',
-  // },
+  experimental: {
+    appDocumentPreloading: true,
+  },
   // devIndicators: {
   //   appIsrStatus: true,
   //   buildActivity: true,

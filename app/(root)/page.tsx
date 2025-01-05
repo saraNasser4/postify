@@ -17,10 +17,17 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
     console.error('Error fetching posts:', err)
   }
 
+  const content = {
+      name: 'landing-page',
+      tag: 'patch, vote and grow',
+      heading: 'Pitch your startup, connect with entrepreneurs',
+      subHeading: 'search now about startups to connect fast',
+  }
+
   return (
     <main className='dark:bg-black'>
       <section>
-        <SubHeading query={query} />
+        <SubHeading content={content} query={query} />
       </section>
       <section className='max-w-[1350px] my-12 mx-auto [&>*]:px-5'>
         <h2 className='font-semibold text-xl md:text-2xl dark:text-white'>
