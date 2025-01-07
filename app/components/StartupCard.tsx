@@ -37,7 +37,7 @@ export default function StartupCard({ post }: { post: post}) {
 
             <div className="flex justify-between w-full text-[18px]">
                 <Link href={`/?query=${post.category.toLowerCase()}`}>
-                    <p className="border border-primary hover:text-primary rounded-xl px-3 py-1.5">{post.category}</p>
+                    <p className="bg-primary/70 rounded-xl px-3 py-1.5">{post.category}</p>
                 </Link>
                 <Link href={`/startup/${post._id}`}>
                     <button className="bg-primary hover:bg-primary/90 px-3 py-1.5 rounded-xl">Details</button>

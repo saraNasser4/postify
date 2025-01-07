@@ -1,6 +1,6 @@
 ## Getting Started
 
-First, I started with build the app and adding the necessary dependencies.
+First, I started with building the app and adding the necessary dependencies.
 
 
 ### Adding Auth.js
@@ -54,3 +54,8 @@ I changed the types.ts file to be suitable for the new data.
 ### ensure startup route works depends on the data
 
 I made sure that when the user click on the details button in the card it shows up the right page with the right data.
+
+### Adding final touch in the startup page
+
+There were some things needed to improve in this page in the styling.
+I added a small views box at this page. However, it's still not dynamic yet.
