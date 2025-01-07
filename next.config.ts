@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     appDocumentPreloading: true,
+    // after: true,
   },
   // devIndicators: {
   //   appIsrStatus: true,

@@ -32,7 +32,7 @@ export default function StartupCard({ post }: { post: post}) {
 
             <Link href={`/startup/${post._id}`} className="w-full">
                 <p className="my-2 text-[14px]">{post.description}</p>
-                <img src={post.image} alt="post image" className="rounded-xl max-h-[200px] min-w-full" />
+                <Image width={150} height={50} src={post.image} alt="post image" className="rounded-xl max-h-[200px] min-w-full" />
             </Link>
 
             <div className="flex justify-between w-full text-[18px]">
