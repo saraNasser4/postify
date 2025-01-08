@@ -26,12 +26,12 @@ export default function StartupCard({ post }: { post: post}) {
                     </Link>
                 </div>
                 <Link href={`/users/${post.author._id}`}>
-                    <Image src='https://placehold.co/48x48' alt='placeholder' width={48} height={48} className="rounded-full" />
+                    <Image src={post.author.image} alt='placeholder' width={40} height={40} className="rounded-full !w-12 !h-12" />
                 </Link>
             </div>
 
             <Link href={`/startup/${post._id}`} className="w-full">
-                <p className="my-2 text-[14px]">{post.description}</p>
+                <p className="my-2 text-[14px] line-clamp-2">{post.description}</p>
                 <Image width={150} height={50} src={post.image} alt="post image" className="rounded-xl max-h-[200px] min-w-full" />
             </Link>
 

@@ -25,11 +25,11 @@ export default async function Home ({ searchParams }: { searchParams: Promise<{ 
   }
 
   return (
-    <main className='dark:bg-black'>
+    <main className='dark:bg-black/95'>
       <section>
         <SubHeading content={content} query={query} />
       </section>
-      <section className='max-w-[1350px] my-12 mx-auto [&>*]:px-5'>
+      <section className='max-w-[1350px] py-12 mx-auto [&>*]:px-5'>
         <h2 className='font-semibold text-xl md:text-2xl dark:text-white'>
           {query ? `Search result for '${query}'` : 'All Starups'}
         </h2>

@@ -60,4 +60,4 @@ I made sure that when the user click on the details button in the card it shows 
 There were some things needed to improve in this page in the styling.
 I added a small views box at this page. However, it's still not dynamic yet.
 
-### Make the Views static
+### Make the Views dynamic
